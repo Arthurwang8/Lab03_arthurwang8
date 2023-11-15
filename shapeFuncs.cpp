@@ -56,7 +56,7 @@ string pointToString(Point p, int precision) {
 string boxToString(Box b, int precision) {
   ostringstream oss;
   oss << setprecision(precision); // set precision to 3 decimal places
-  oss << "(" << b.ul.x << "," << b.ul.y <<  << "," << b.width << "," << b.height <<")";
+  oss << "(" << b.ul.x << "," << b.ul.y << "," << b.width << "," << b.height <<")";
   return oss.str();
   
 }
