@@ -89,10 +89,10 @@ bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
 
   // TODO: FILL THIS IN WITH APPROPRIATE CODE
 Point f1; 
-initPoint(*f1, b1.ul.x+b1.width, b1.ul.y-b1.height);
+initPoint(f1, b1.ul.x+b1.width, b1.ul.y-b1.height);
 Point f2; 
-initPoint(*f2, b2.ul.x+b2.width, b2.ul.y-b2.height);
-if(pointsApproxEqual(*b1.ul, *b2.ul, tolerance)&&pointsApproxEqual(f1, f2, tolerance)){
+initPoint(f2, b2.ul.x+b2.width, b2.ul.y-b2.height);
+if(pointsApproxEqual(b1.ul, b2.ul, tolerance)&&pointsApproxEqual(f1, f2, tolerance)){
 	return true;}
 else{
 return false;
