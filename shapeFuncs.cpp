@@ -110,7 +110,7 @@ return false;
 // There is also a way to "reuse" initPoint, if you are feeling 
 //  confident in your understanding of pointers and structs.
 
-void initBox(struct Box *b, double ulx, double uly, double w, double h)
+void initBox(struct Box *p, double ulx, double uly, double w, double h)
 {
 (*p).ul.x = ulx;
 (*p).ul.y = uly;
