@@ -88,8 +88,16 @@ bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
   // and the definition in your utility.cpp file.
 
   // TODO: FILL THIS IN WITH APPROPRIATE CODE
+Point f1; 
+initPoint(*f1, b1.u1.x+b1.w, b1.u1.y+b1.h);
+Point f2; 
+initPoint(*f2, b2.u1.x+b2.w, b2.u1.y+b2.h);
+if(pointsApproxEqual(*b1.u1, *b2.u1, tolerance)&&pointsApproxEqual(*f1, *f2, tolerance)){
+	return true;}
+else{
+return false;
+}
 
-  return false; // STUB!  TODO: Delete this line and comment and replace with appropriate code
 }
 
 
